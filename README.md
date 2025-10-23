@@ -8,6 +8,7 @@ https://youtu.be/zNaRE4I9PtA
 
 ![header](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Karamin%20Stanislav&section=header&fontColor=auto&textBg=false)
 
+![header.gif](https://github.com/karamin-stanislav/assets/blob/https/github.dev/karamin-stanislav/karamin-stanislav/quantum-computer-monitor-futuristic-technilogy-digital2.gif)
 # 👨‍💻 About me
 Hi, my name is Stanislav!
 I am a beginner programmer-analyst from Moscow.
