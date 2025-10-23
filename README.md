@@ -1,3 +1,9 @@
+Currently, my top priority is expanding the <b>Java Beauty Suite</b> <img src="https://github.com/karamin-stanislav/assets/blob/https/github.dev/karamin-stanislav/karamin-stanislav/Карамин_Фото_Профиля_Автар_IMG_8348-round.webp)" width="250" height="250" align="left" alt="https://github.com/karamin-stanislav/karamin-stanislav.github.io"> ✨ while continuing to highlight the true <i>beauty in Java</i> through every project I create. 
+I am focused on mastering <b>JavaFX</b>, improving my <b>GitHub workflows</b>, and refining <b>clean coding practices</b>🌱.<br> 
+My ultimate goal is to deliver open-source Java applications that are not only useful and professional
+but also playful, creative, and beautifully crafted 🚀. <br>  
+
+![Border](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=6)
 
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Karamin Stanislav.
 ===========================================================================================================================================
