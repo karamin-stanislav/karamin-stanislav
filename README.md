@@ -1,7 +1,69 @@
-Currently, my top priority is expanding the <b>Java Beauty Suite</b> <img src="https://github.com/karamin-stanislav/assets/blob/https/github.dev/karamin-stanislav/karamin-stanislav/Карамин_Фото_Профиля_Автар_IMG_8348-round.webp)" width="250" height="250" align="left" alt="https://github.com/karamin-stanislav/karamin-stanislav.github.io"> ✨ while continuing to highlight the true <i>beauty in Java</i> through every project I create. 
+<div align="center">
+
+<!-- Language Switch with Flags -->
+<div style="margin-bottom: 20px;">
+  <button onclick="switchLanguage('en')" style="background: none; border: none; cursor: pointer; font-size: 24px;" title="English">English</button>
+  <button onclick="switchLanguage('ru')" style="background: none; border: none; cursor: pointer; font-size: 24px;" title="Русский">Русский</button>
+</div>
+
+<br>
+
+<div id="content-en">
+<!-- Your English content here -->
+# 👋 Hello World!
+
+**Currently working on:** Expanding the **Java Beauty Suite** ✨
+
+**Focus areas:**
+- 🎨 Mastering **JavaFX**
+- 🔄 Improving **GitHub workflows** 
+- 📚 Refining **clean coding practices** 🌱
+
+**Goal:** Create open-source Java applications that are useful, professional, playful, and beautifully crafted. 🚀
+</div>
+
+<div id="content-ru" style="display: none;">
+<!-- Your Russian content here -->
+# 👋 Привет!
+
+**Сейчас работаю над:** Развитием **Java Beauty Suite** ✨
+
+**Основные направления:**
+- 🎨 Освоение **JavaFX**
+- 🔄 Улучшение **GitHub workflows**
+- 📚 Совершенствование **чистого кода** 🌱
+
+**Цель:** Создавать open-source приложения на Java, которые будут полезными, профессиональными, игривыми и красиво сделанными. 🚀
+</div>
+
+</div>
+
+<script>
+function switchLanguage(lang) {
+  // Hide all content
+  document.getElementById('content-en').style.display = 'none';
+  document.getElementById('content-ru').style.display = 'none';
+  
+  // Show selected language
+  document.getElementById('content-' + lang).style.display = 'block';
+}
+</script>
+
+![Border](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=6)
+
+
+
+
+
+Currently, my top priority is expanding the <b>Java Beauty Suite</b> <img src="https://github.com/karamin-stanislav/assets/blob/482d173b9a25497709e437f416abc520ba17e9e3/karamin-stanislav-image.webp" width="250" height="250" align="left" alt="https://github.com/karamin-stanislav/karamin-stanislav.github.io"> ✨ while continuing to highlight the true <i>beauty in Java</i> through every project I create. 
 I am focused on mastering <b>JavaFX</b>, improving my <b>GitHub workflows</b>, and refining <b>clean coding practices</b>🌱.<br> 
+
+
 My ultimate goal is to deliver open-source Java applications that are not only useful and professional
 but also playful, creative, and beautifully crafted 🚀. <br>  
+
+
+<img src="https://github.com/karamin-stanislav/assets/blob/482d173b9a25497709e437f416abc520ba17e9e3/karamin_stanislav_image.png" width="250" height="250" align="right" alt="Profile Photo">
 
 ![Border](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=6)
 
