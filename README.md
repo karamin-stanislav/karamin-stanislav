@@ -11,6 +11,7 @@
 |<label for="modal7"><img src="ссылка" width="30" height="30" style="cursor:pointer"></label>|**Анализ датасета с фильмами и сериалами Netflix**      |Python (pandas, numpy, datetime, matplotlib, seaborn),Anaconda, Jupyter, Markdown| **Задача:** Провести аналитику по датасету и выполнить 12-заданий.<br>Датасет (8807 unique values): https://www.kaggle.com/datasets/shivamb/netflix-shows| 07.10.2025 |[link to file ДЗ2.ipynb](https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/36fcbce4707f03974ec4f1e66af547db347cb68f/20251007%20%D0%94%D0%97_02_%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20python%20%D0%A1.%D0%9F.%20%D0%9A%D0%B0%D1%80%D0%B0%D0%BC%D0%B8%D0%BD.ipynb)|
 |<label for="modal8"><img src="ссылка" width="30" height="30" style="cursor:pointer"></label>|**Доступ к данных открытой группы Вконтакте, через API (Application Programming Interface)**      |PostgreSQL, Dbeaver, VK API, SQL, CSV| **Задача:** Проанализировать посты в Вконтакте. Ответить на вопрос - что больше всего влияет на количество лайков? В качестве ответа приложить таблицу в формате CSV, SQL-запросы с необходимыми пояснениями и выводом. | 21.10.2025 |[l2f vk_posts_G_Adventum.csv.CSV](https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/78dc4b90e44efddb29cf0300444e814cc5ad1c45/20251021T1103_vk_posts_Group_Adventum.csv)<br>[l2f Task_postgres_Script.sql](https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/78dc4b90e44efddb29cf0300444e814cc5ad1c45/20251014T1645_Adventum_20251014T1645_Task_postgres_Script.sql)<br>[l2f postgres_Script2Optimized.sql](https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/78dc4b90e44efddb29cf0300444e814cc5ad1c45/20251021T1103_Adventum_20251021T1103_Task_postgres_Script2Optimized.sql)|
 
+
 <!-- Модальные окна для каждой картинки -->
 <input type="checkbox" id="modal1" class="modal-toggle">
 <div class="modal">
@@ -155,6 +156,8 @@ table img:hover {
   transform: scale(1.1);
 }
 </style>
+
+
 
 ![Wave](https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg)
 
