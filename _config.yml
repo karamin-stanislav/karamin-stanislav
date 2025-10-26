@@ -1,40 +1,40 @@
-# Основные настройки сайта
+# Basic website settings
 title: "Stanislav Karamin - Programmer-analyst (Python, SQL, BI, Statistics)"
 description: "Programmer-analyst with skills in Python, SQL, BI, statistics, and mathematics;<br><br>I love finding patterns in data and turning them into understandable reports; <br><br>Currently, my main priority and incredible passion is developing my skills in the academic and professional fields of analytics, programming, and mathematics."
 url: "https://ksp-hub.github.io/" # Ваш URL
 baseurl: "" # Оставьте пустым для username.github.io
 
-# Информация о авторе
+# About the author
 author:
   name: "Karamin Stanislav Pavlovich"
   email: "karamin.stanislav@gmail.com"
   github: "KSP-Hub"
   bio: "Programmer-analyst with skills in Python, SQL, BI, statistics, and mathematics;<br><br>I love finding patterns in data and turning them into understandable reports; <br><br>Currently, my main priority and incredible passion is developing my skills in the academic and professional fields of analytics, programming, and mathematics."
 
-# Настройки темы
+# Theme settings
 theme: jekyll-theme-cayman
-# Другие доступные темы:
+# Other available topics:
 # - jekyll-theme-minimal
 # - jekyll-theme-hacker
 # - jekyll-theme-merlot
 # - jekyll-theme-time-machine
 
-# Настройки отображения
+# Display settings
 show_downloads: false
 google_analytics: "" # Ваш Google Analytics ID если нужен
 github:
   repository_url: "https://github.com/KSP-Hub"
 
-# Настройки плагинов
+# Plugin settings
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
 
-# Настройки SEO
+# SEO settings
 logo: "/assets/images/logo.png" # Путь к логотипу
-twitter_karaminsp: "" # Ваш Twitter если есть
-linkedin_karamin-stanislav: "" # Ваш LinkedIn если есть
+twitter_username: "karaminsp" # Ваш Twitter если есть
+linkedin_username: "karamin-stanislav" # Ваш LinkedIn если есть
 
 ========
 ========
