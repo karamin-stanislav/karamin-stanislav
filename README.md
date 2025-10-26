@@ -6,8 +6,8 @@
 </div>
 
 <!-- Фото с ссылкой -->
-<a href="https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1" target="_blank">
-  <img src="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg" 
+<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg" target="_blank">
+  <img src="https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1" 
        width="200" 
        height="200" 
        alt="Profile Photo"
