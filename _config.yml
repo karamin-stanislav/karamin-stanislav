@@ -8,7 +8,7 @@ baseurl: "" # Оставьте пустым для username.github.io
 author:
   name: "Karamin Stanislav Pavlovich"
   email: "karamin.stanislav@gmail.com"
-  github: "KSP-Hub"
+  github: "https://ksp-hub.github.io/"
   bio: "Programmer-analyst with skills in Python, SQL, BI, statistics, and mathematics;<br><br>I love finding patterns in data and turning them into understandable reports; <br><br>Currently, my main priority and incredible passion is developing my skills in the academic and professional fields of analytics, programming, and mathematics."
 
 # Theme settings
