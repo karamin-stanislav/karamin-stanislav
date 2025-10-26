@@ -1,5 +1,11 @@
 # KSP-Hub.github.io
-<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg"><img src="https://private-user-images.githubusercontent.com/157570224/504871545-3110c8b0-6eb1-48f3-bc68-cb853c384923.webp?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjEyNDEyNjEsIm5iZiI6MTc2MTI0MDk2MSwicGF0aCI6Ii8xNTc1NzAyMjQvNTA0ODcxNTQ1LTMxMTBjOGIwLTZlYjEtNDhmMy1iYzY4LWNiODUzYzM4NDkyMy53ZWJwP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTAyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEwMjNUMTczNjAxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmM1NTc5YmM3ZTI5NjFlYTYwZDQ0YjczODdjYTRjNjA4NmFiYWQyMzRkZjllZjUzNTJlMWM4MTRmODkyYWUwMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.z2HjlhHrDmXM8Sit0Ax5v-IscSJ7OcDyfFNgTupjV-g" width="200" height="200" alt="Profile Photo">
+
+<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg"><img src="[https://private-user-images.githubusercontent.com/157570224/504871545-3110c8b0-6eb1-48f3-bc68-cb853c384923.webp?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjEyNDEyNjEsIm5iZiI6MTc2MTI0MDk2MSwicGF0aCI6Ii8xNTc1NzAyMjQvNTA0ODcxNTQ1LTMxMTBjOGIwLTZlYjEtNDhmMy1iYzY4LWNiODUzYzM4NDkyMy53ZWJwP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MTAyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTEwMjNUMTczNjAxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YmM1NTc5YmM3ZTI5NjFlYTYwZDQ0YjczODdjYTRjNjA4NmFiYWQyMzRkZjllZjUzNTJlMWM4MTRmODkyYWUwMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.z2HjlhHrDmXM8Sit0Ax5v-IscSJ7OcDyfFNgTupjV-g](https://github.com/KSP-Hub/assets/blob/2037e976906bfcd10c14d32c2c3f9deef4f734fd/karamin_stanislav_image.png)" width="200" height="200" alt="Profile Photo">
+
+<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg">
+  <img src="[https://example.com/path/to/your/image.jpg](https://disk.yandex.ru/i/a7R9i82Czp8hyw)" width="200" height="200" alt="Profile Photo">
+</a>
+
 
 Personal portfolio website of Stanislav Karamin - Programmer Analyst.
 🌐 **Live Site:** https://ksp-hub.github.io
