@@ -1,20 +1,9 @@
 # KSP-Hub.github.io
 
-<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg"><img src="https://disk.yandex.ru/client/disk/30_Resources/Карамин%20Станислав%20Павлович%20(КСП)/Изображения_Карамин_С_П?idApp=client&dialog=slider&idDialog=%2Fdisk%2F30_Resources%2FКарамин%20Станислав%20Павлович%20(КСП)%2FИзображения_Карамин_С_П%2FКарамин_Фото_Профиля_Автар.JPG" width="200" height="200" alt="Profile Photo">
-
-<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg">
-  <img src="https://disk.yandex.ru/client/disk/30_Resources/Карамин%20Станислав%20Павлович%20(КСП)/Изображения_Карамин_С_П?idApp=client&dialog=slider&idDialog=%2Fdisk%2F30_Resources%2FКарамин%20Станислав%20Павлович%20(КСП)%2FИзображения_Карамин_С_П%2FКарамин_Фото_Профиля_Автар.JPG)" width="200" height="200" alt="Profile Photo">
-</a>
-
-
-<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg">
-  <img src="https://disk.yandex.ru/client/disk/30_Resources/Карамин%20Станислав%20Павлович%20(КСП)/Изображения_Карамин_С_П?idApp=client&dialog=slider&idDialog=%2Fdisk%2F30_Resources%2FКарамин%20Станислав%20Павлович%20(КСП)%2FИзображения_Карамин_С_П%2FКарамин_Фото_Профиля_Автар.JPG" width="200" height="200" alt="Profile Photo">
-</a>
-
 <div align="center">
 
-<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg"><img src="https://disk.yandex.ru/i/QgZKYx6GeEbq7Q" width="200" height="200" alt="Profile Photo">
-
+<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg"><img src="https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1" width="200" height="200" alt="Profile Photo">
+</div>
 
 Personal portfolio website of Stanislav Karamin - Programmer Analyst.
 🌐 **Live Site:** https://ksp-hub.github.io
