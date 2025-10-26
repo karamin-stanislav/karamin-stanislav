@@ -5,6 +5,11 @@
 <a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg"><img src="https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1" width="200" height="200" alt="Profile Photo">
 </div>
 
+<!-- Фото с ссылкой -->
+<a href="[profile image](https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1)">
+  <img src="[link-click image]https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg" width="200" height="200" alt="Profile Photo">
+</a>
+
 Personal portfolio website of Stanislav Karamin - Programmer Analyst.
 🌐 **Live Site:** https://ksp-hub.github.io
 
