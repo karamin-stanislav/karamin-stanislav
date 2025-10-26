@@ -23,7 +23,7 @@ theme: jekyll-theme-cayman
 show_downloads: false
 google_analytics: "" # Ваш Google Analytics ID если нужен
 github:
-  repository_url: "https://github.com/KSP-Hub"
+  repository_url: "https://github.com/KSP-Hub/KSP-Hub.github.io"
 
 # Plugin settings
 plugins:
