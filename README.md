@@ -1,25 +1,15 @@
 # KSP-Hub.github.io
 
-<div align="center">
-
-<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg"><img src="https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1" width="200" height="200" alt="Profile Photo">
+<div align="left">
+  <a href="https://raw.githubusercontent.com/KSP-Hub/assets/main/karamin-stanislav-image.webp" target="_blank">
+    <img src="https://raw.githubusercontent.com/KSP-Hub/assets/main/karamin-stanislav-image.webp" 
+         width="200" 
+         height="200" 
+         alt="Profile Photo"
+         onerror="this.src='https://via.placeholder.com/200x200/3498db/ffffff?text=Photo+Not+Found'"
+         style="border-radius: 10px; border: 2px solid #3498db;">
+  </a>
 </div>
-
-<!-- Фото с ссылкой -->
-<a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg" target="_blank">
-  <img src="https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1" 
-       width="200" 
-       height="200" 
-       alt="Profile Photo"
-       style="border-radius: 10px; border: 2px solid #3498db;">
-</a>
-
-[<img src="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg" width="200" height="200" alt="Profile Photo">](https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1)
-
----
-<a href="[profile image](https://github.com/KSP-Hub/KSP-Hub.github.io/issues/1)">
-  <img src="[link-click image]https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg" width="200" height="200" alt="Profile Photo">
-</a>
 
 Personal portfolio website of Stanislav Karamin - Programmer Analyst.
 🌐 **Live Site:** https://ksp-hub.github.io
