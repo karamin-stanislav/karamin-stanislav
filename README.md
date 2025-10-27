@@ -1,7 +1,7 @@
 # KSP-Hub.github.io
 
 <div align="left">
-  <a href="https://raw.githubusercontent.com/KSP-Hub/assets/main/karamin-stanislav-image.webp" target="_blank">
+  <a href="https://otkrytki.by/images/cards/image-kartinka-klassnogo-dnya-prikolnaya-neobychnaya.jpg" target="_blank">
     <img src="https://raw.githubusercontent.com/KSP-Hub/assets/main/karamin-stanislav-image.webp" 
          width="200" 
          height="200" 
