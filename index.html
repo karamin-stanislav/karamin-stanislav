@@ -6,16 +6,18 @@
     <title>Stanislav Karamin - Programmer Analyst</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        /* ===== COLOR VARIABLES ===== */
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #333;
-            --bg-color: #f8f9fa;
-            --card-bg: #ffffff;
-            --border-color: #e1e4e8;
+            --primary-color: #2c3e50;    /* Dark blue for headers */
+            --secondary-color: #3498db;  /* Blue for accents */
+            --accent-color: #e74c3c;     /* Red for hover effects */
+            --text-color: #333;          /* Main text color */
+            --bg-color: #f8f9fa;         /* Page background */
+            --card-bg: #ffffff;          /* Section background */
+            --border-color: #e1e4e8;     /* Borders color */
         }
 
+        /* ===== RESET & BASE STYLES ===== */
         * {
             margin: 0;
             padding: 0;
@@ -37,13 +39,43 @@
             padding: 0 20px;
         }
 
-        /* Header Styles */
+        /* ===== HEADER STYLES ===== */
         header {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 4rem 0;
-            text-align: center;
+            padding: 3rem 0;
             margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: left;
+        }
+
+        /* Profile image styling */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .profile-text {
+            flex: 1;
+            min-width: 300px;
         }
 
         .profile-header h1 {
@@ -58,23 +90,31 @@
             margin-bottom: 1rem;
         }
 
+        /* Profile badges styling */
+        .profile-badges {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
         .profile-badge {
             display: inline-block;
             background: rgba(255,255,255,0.2);
             padding: 0.5rem 1.5rem;
             border-radius: 25px;
             font-size: 1rem;
-            margin-top: 1rem;
+            backdrop-filter: blur(10px);
         }
 
-        /* Section Styles */
+        /* ===== SECTION STYLES ===== */
         section {
             background: var(--card-bg);
             margin: 2rem 0;
             padding: 2.5rem;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            border-left: 5px solid var(--secondary-color);
+            border-left: 5px solid var(--secondary-color); /* Accent border */
         }
 
         section h2 {
@@ -90,7 +130,7 @@
             color: var(--secondary-color);
         }
 
-        /* List Styles */
+        /* ===== LIST STYLES ===== */
         .goals-list {
             list-style: none;
             counter-reset: goal-counter;
@@ -119,7 +159,7 @@
             font-weight: bold;
         }
 
-        /* Table Styles */
+        /* ===== TABLE STYLES ===== */
         .tech-table, .projects-table {
             width: 100%;
             border-collapse: collapse;
@@ -148,7 +188,116 @@
             transition: all 0.3s ease;
         }
 
-        /* Link Styles */
+        /* ===== PROJECT IMAGE STYLES ===== */
+        .project-image {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .project-image:hover {
+            transform: scale(1.5);
+            border-color: var(--secondary-color);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            z-index: 100;
+            position: relative;
+        }
+
+        .project-image-cell {
+            width: 100px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* ===== ENHANCED MODAL STYLES ===== */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.95);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-header {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 35px;
+            color: white;
+            z-index: 1001;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .modal-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 60px 20px 20px;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+
+        .modal-footer {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+
+        .close {
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            background: rgba(0,0,0,0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close:hover {
+            color: var(--accent-color);
+            background: rgba(0,0,0,0.7);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* ===== LINK STYLES ===== */
         a {
             color: var(--secondary-color);
             text-decoration: none;
@@ -176,7 +325,7 @@
             text-decoration: none;
         }
 
-        /* Footer */
+        /* ===== FOOTER STYLES ===== */
         footer {
             background: var(--primary-color);
             color: white;
@@ -199,14 +348,25 @@
             gap: 0.5rem;
         }
 
-        /* Responsive Design */
+        /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 768px) {
+            .profile-header {
+                text-align: center;
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
             .profile-header h1 {
                 font-size: 2rem;
             }
             
             .profile-header .tagline {
                 font-size: 1.1rem;
+            }
+            
+            .about-section {
+                flex-direction: column;
+                text-align: center;
             }
             
             section {
@@ -223,9 +383,21 @@
                 padding: 0.5rem;
             }
             
+            .project-image:hover {
+                transform: scale(1.3);
+            }
+            
             .contact-info {
                 flex-direction: column;
                 gap: 1rem;
+            }
+
+            .modal-header {
+                padding: 0 20px;
+            }
+            
+            .modal-header h3 {
+                font-size: 1.2rem;
             }
         }
 
@@ -238,9 +410,23 @@
                 display: block;
                 overflow-x: auto;
             }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .project-image-cell {
+                width: 80px;
+            }
+            
+            .project-image {
+                width: 60px;
+                height: 45px;
+            }
         }
 
-        /* Animation */
+        /* ===== ANIMATIONS ===== */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -256,29 +442,69 @@
             animation: fadeInUp 0.6s ease-out;
         }
 
-        /* Icon colors */
-        .fa-graduation-cap { color: #27ae60; }
-        .fa-bullseye { color: #e74c3c; }
-        .fa-laptop-code { color: #3498db; }
-        .fa-briefcase { color: #f39c12; }
-        .fa-envelope { color: #9b59b6; }
+        /* ===== ICON COLORS ===== */
+        .fa-graduation-cap { color: #27ae60; } /* Green for education */
+        .fa-bullseye { color: #e74c3c; }       /* Red for goals */
+        .fa-laptop-code { color: #3498db; }    /* Blue for technologies */
+        .fa-briefcase { color: #f39c12; }      /* Orange for projects */
+        .fa-envelope { color: #9b59b6; }       /* Purple for contact */
+        .fa-user { color: #8e44ad; }           /* Purple for about */
     </style>
 </head>
 <body>
+    <!-- ===== HEADER SECTION ===== -->
     <header>
         <div class="container">
             <div class="profile-header">
-                <h1>Stanislav Karamin</h1>
-                <div class="tagline">Programmer-analyst (Python, SQL, BI, Statistics)</div>
-                <div class="profile-badge">
-                    <i class="fas fa-code"></i> Data-Driven Solutions
+                <!-- Profile Photo - Only one photo kept in header -->
+                <img src="https://raw.githubusercontent.com/KSP-Hub/assets/main/karamin-stanislav-image.webp" 
+                     alt="Stanislav Karamin - Programmer Analyst"
+                     class="profile-image"
+                     onerror="this.src='https://raw.githubusercontent.com/KSP-Hub/assets/main/karamin-stanislav-image.webp'">
+                <div class="profile-text">
+                    <h1>Stanislav Karamin</h1>
+                    <div class="tagline">Programmer-analyst (Python, SQL, BI, Statistics)</div>
+                    <div class="profile-badges">
+                        <div class="profile-badge">
+                            <i class="fas fa-code"></i> Data-Driven Solutions
+                        </div>
+                        <div class="profile-badge">
+                            <i class="fas fa-chart-line"></i> Analytics Junior
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <!-- Educational Vector Section -->
+        <!-- ===== ABOUT ME SECTION ===== -->
+        <section id="about">
+            <h2><i class="fas fa-user"></i> ABOUT ME</h2>
+            <div class="about-section">
+                <!-- Photo removed from about section to avoid duplication -->
+                <div class="about-content">
+                    <p><strong>Programmer-analyst with skills in Python, SQL, BI, statistics, and mathematics.</strong></p>
+                    
+                    <p>I love finding patterns in data and turning them into understandable reports.</p>
+                    
+                    <p>Currently, my main priority and incredible passion is developing my skills in the academic and professional fields of analytics, programming, and mathematics.</p>
+                    
+                    <!-- Competencies highlight box -->
+                    <div style="margin-top: 1.5rem; padding: 1rem; background: #e8f4f8; border-radius: 8px; border-left: 4px solid #3498db;">
+                        <strong>Core Competencies:</strong>
+                        <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                            <li>Collect, structure and analyze data;</li>
+                            <li>Programming in Python;</li>
+                            <li>Build reports and dashboards in Excel and DataLens;</li>
+                            <li>Use SQL to extract data from databases.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EDUCATION SECTION ===== -->
         <section id="education">
             <h2><i class="fas fa-graduation-cap"></i> EDUCATIONAL VECTOR</h2>
             <ol class="goals-list">
@@ -292,7 +518,7 @@
             </ol>
         </section>
 
-        <!-- Long-term Goals Section -->
+        <!-- ===== GOALS SECTION ===== -->
         <section id="goals">
             <h2><i class="fas fa-bullseye"></i> LONG-TERM GOALS AND EXPECTATIONS</h2>
             <ol class="goals-list">
@@ -301,7 +527,7 @@
             </ol>
         </section>
 
-        <!-- Technologies Section -->
+        <!-- ===== TECHNOLOGIES SECTION ===== -->
         <section id="technologies">
             <h2><i class="fas fa-laptop-code"></i> SET OF TECHNOLOGIES</h2>
             <table class="tech-table">
@@ -328,12 +554,13 @@
             </table>
         </section>
 
-        <!-- Projects Section -->
+        <!-- ===== PROJECTS SECTION WITH PHOTOS ===== -->
         <section id="projects">
             <h2><i class="fas fa-briefcase"></i> EXAMPLES OF MY WORK</h2>
             <table class="projects-table">
                 <thead>
                     <tr>
+                        <th>Preview</th>  <!-- Column for project screenshots -->
                         <th>Project</th>
                         <th>Technology</th>
                         <th>Description</th>
@@ -342,35 +569,79 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Project 1: Data Collection -->
                     <tr>
+                        <td class="project-image-cell">
+                            <img src="https://disk.yandex.ru/client/disk/30_Resources/Карамин%20Станислав%20Павлович%20(КСП)/Изображения_Карамин_С_П?idApp=client&dialog=slider&idDialog=%2Fdisk%2F30_Resources%2FКарамин%20Станислав%20Павлович%20(КСП)%2FИзображения_Карамин_С_П%2FKSP-Profile-Photo3B.webp" 
+                                 alt="Data Collection Project Screenshot"
+                                 class="project-image"
+                                 onclick="openModal(this.src, 'Data Collection Project')"
+                                 onerror="this.src='https://disk.yandex.ru/client/disk/30_Resources/Карамин%20Станислав%20Павлович%20(КСП)/Изображения_Карамин_С_П?idApp=client&dialog=slider&idDialog=%2Fdisk%2F30_Resources%2FКарамин%20Станислав%20Павлович%20(КСП)%2FИзображения_Карамин_С_П%2FKSP-Profile-Photo3B.webp'">
+                        </td>
                         <td><strong>Data collection, processing, and structuring</strong></td>
                         <td>Anaconda, Python, Jupyter</td>
                         <td>Working with the "openpyxl, docx" modules in Jupyter notebook</td>
                         <td>09.09.2025</td>
                         <td><a href="https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/main/20250909%20%D0%9B%D0%90%D0%911.%20%D0%A1%D0%B1%D0%BE%D1%80%2C%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%B8%20%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%A1.%20%D0%9F.%20%D0%9A%D0%B0%D1%80%D0%B0%D0%BC%D0%B8%D0%BD%202025%20%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95.ipynb" class="project-link" target="_blank">View File</a></td>
                     </tr>
+
+                    <!-- Project 2: Python Analysis -->
                     <tr>
+                        <td class="project-image-cell">
+                            <img src="https://raw.githubusercontent.com/KSP-Hub/assets/main/python-analysis-screenshot.jpg" 
+                                 alt="Python Data Analysis Project"
+                                 class="project-image"
+                                 onclick="openModal(this.src, 'Python Data Analysis')"
+                                 onerror="this.src='https://via.placeholder.com/80x60/2d5c7a/ffffff?text=Python+Analysis'">
+                        </td>
                         <td><strong>Fundamentals of Data Analysis in Python</strong></td>
                         <td>Anaconda, Python, Jupyter</td>
                         <td>Task 1: Create Series, clean DataFrame, analyze data. Task 2: Research borrowers with pandas, numpy, matplotlib.</td>
                         <td>September 15, 2025</td>
                         <td><a href="https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/main/20250915%20%D0%9B%D0%912.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B2%20Python.%20%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95.%20%D0%A1.%20%D0%9F.%20%D0%9A%D0%B0%D1%80%D0%B0%D0%BC%D0%B8%D0%BD.%2007.10.2025.ipynb" class="project-link" target="_blank">View File</a></td>
                     </tr>
+
+                    <!-- Project 3: Excel Statistics -->
                     <tr>
+                        <td class="project-image-cell">
+                            <img src="https://raw.githubusercontent.com/KSP-Hub/assets/main/excel-stats-screenshot.jpg" 
+                                 alt="Excel Statistics Analysis"
+                                 class="project-image"
+                                 onclick="openModal(this.src, 'Excel Statistical Analysis')"
+                                 onerror="this.src='https://via.placeholder.com/80x60/7a4c2d/ffffff?text=Excel+Stats'">
+                        </td>
                         <td><strong>Fundamentals of statistics in Excel</strong></td>
                         <td>MS Excel</td>
                         <td>Comprehensive statistical analysis of company sales for 2021-2023, identify trends, test hypotheses, regression analysis</td>
                         <td>09.26.2025</td>
                         <td><a href="https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/main/20250926%20%D0%9B%D0%913.%20Excel.%20%D0%A1.%D0%9F.%20%D0%9A%D0%B0%D1%80%D0%B0%D0%BC%D0%B8%D0%BD%20%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95.xlsx" class="project-link" target="_blank">View File</a></td>
                     </tr>
+
+                    <!-- Project 4: SQL Analysis -->
                     <tr>
+                        <td class="project-image-cell">
+                            <img src="https://raw.githubusercontent.com/KSP-Hub/assets/main/sql-analysis-screenshot.jpg" 
+                                 alt="SQL Database Analysis"
+                                 class="project-image"
+                                 onclick="openModal(this.src, 'SQL Database Analysis')"
+                                 onerror="this.src='https://via.placeholder.com/80x60/2d7a5c/ffffff?text=SQL+Analysis'">
+                        </td>
                         <td><strong>SQL Basics for Analysts</strong></td>
                         <td>PostgreSQL, Dbeaver, SQL</td>
                         <td>Complete and prepare report in .docx format. Dataset: e-commerce transactions</td>
                         <td>09.28.2025</td>
                         <td><a href="https://github.com/karamin-stanislav/Tasks-Solutions-Data-Analysis/blob/main/20250928%20%D0%9B%D0%914%20E-commerce-transactions-dataset%20%E2%80%94%20%D0%A0%D0%95%D0%A8%D0%95%D0%9D%D0%98%D0%95.%20%D0%A1.%20%D0%9F.%20%D0%9A%D0%B0%D1%80%D0%B0%D0%BC%D0%B8%D0%BD.docx" class="project-link" target="_blank">View File</a></td>
                     </tr>
+
+                    <!-- Project 5: DataLens Dashboard -->
                     <tr>
+                        <td class="project-image-cell">
+                            <img src="https://raw.githubusercontent.com/KSP-Hub/assets/main/datalens-dashboard-screenshot.jpg" 
+                                 alt="Yandex DataLens Dashboard"
+                                 class="project-image"
+                                 onclick="openModal(this.src, 'Yandex DataLens Dashboard')"
+                                 onerror="this.src='https://via.placeholder.com/80x60/5c2d7a/ffffff?text=DataLens+BI'">
+                        </td>
                         <td><strong>Data visualization with Yandex DataLens</strong></td>
                         <td>BI: Datalens, CSV, ClickHouse, SQL</td>
                         <td>Analyze sales in large online store for 2007-2025 and prepare dashboard for management</td>
@@ -382,6 +653,7 @@
         </section>
     </div>
 
+    <!-- ===== FOOTER SECTION ===== -->
     <footer>
         <div class="container">
             <h3>Get In Touch</h3>
@@ -404,10 +676,60 @@
     </footer>
 
     <script>
-        // Simple animation on scroll
+        // ===== ENHANCED MODAL FUNCTION FOR PROJECT IMAGES =====
+        function openModal(src, title = 'Project Screenshot') {
+            // Create modal element
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.style.display = 'block';
+            
+            // Modal content with title
+            modal.innerHTML = `
+                <div class="modal-header">
+                    <h3>${title}</h3>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <img class="modal-content" src="${src}" alt="${title}">
+                </div>
+                <div class="modal-footer">
+                    <p>Click outside the image or press ESC to close</p>
+                </div>
+            `;
+            
+            // Add modal to page
+            document.body.appendChild(modal);
+            
+            // Close modal when clicking outside image
+            modal.onclick = function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            }
+            
+            // Close modal with ESC key
+            document.addEventListener('keydown', function escHandler(e) {
+                if (e.key === 'Escape') {
+                    closeModal();
+                    document.removeEventListener('keydown', escHandler);
+                }
+            });
+        }
+
+        // Function to close modal
+        function closeModal() {
+            const modal = document.querySelector('.modal');
+            if (modal) {
+                modal.style.display = 'none';
+                modal.remove();
+            }
+        }
+
+        // ===== SCROLL ANIMATIONS =====
         document.addEventListener('DOMContentLoaded', function() {
             const sections = document.querySelectorAll('section');
             
+            // Intersection Observer for scroll animations
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -417,11 +739,36 @@
                 });
             }, { threshold: 0.1 });
             
+            // Set initial state and observe sections
             sections.forEach(section => {
                 section.style.opacity = '0';
                 section.style.transform = 'translateY(20px)';
                 section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(section);
+            });
+
+            // ===== IMAGE LOADING ANIMATIONS =====
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.style.opacity = '1';
+                });
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+            });
+        });
+
+        // ===== SMOOTH SCROLLING FOR ANCHOR LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             });
         });
     </script>
